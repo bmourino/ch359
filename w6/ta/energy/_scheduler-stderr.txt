@@ -1,0 +1,9 @@
+Switching to atp/3.14.5.
+Switching to cray-libsci/20.09.1.
+Switching to cray-mpich/7.7.18.
+Switching to craype/2.7.10.
+Switching to gcc/9.3.0.
+Switching to modules/3.2.11.4.
+Switching to perftools-base/21.09.0.
+Switching to pmi/5.0.17.
+/var/spool/slurmd/job37403382/slurm_script: line 34: False: command not found

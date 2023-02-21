@@ -1,0 +1,15 @@
+/var/spool/slurmd/job1992753/slurm_script: line 15: /ssoft/spack/bin/slmodules.sh: No such file or directory
+Lmod has detected the following error: The following module(s) are unknown:
+"cp2k/5.1-mpi"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cp2k/5.1-mpi"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+slurmstepd: error: *** JOB 1992753 ON h142 CANCELLED AT 2022-03-30T11:13:35 ***
+slurmstepd: error: *** JOB 1992751 ON h141 CANCELLED AT 2022-03-30T11:13:38 ***

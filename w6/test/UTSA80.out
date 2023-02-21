@@ -1,0 +1,143 @@
+ DBCSR| Multiplication driver                                               BLAS
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              T
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-03-30 11:09:29.441
+ ***** ** ***  *** **   PROGRAM STARTED ON                                  h141
+ **    ****   ******    PROGRAM STARTED BY                                 bueno
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 17876
+  **** **  *******  **  PROGRAM STARTED IN                   /scratch/bueno/test
+
+ CP2K| version string:                                          CP2K version 5.1
+ CP2K| source code revision number:                                    svn:18091
+ CP2K| cp2kflags: libint fftw3 pexsi parallel mpi3 scalapack libderiv_max_am1=5 
+ CP2K|            libint_max_am=6
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Thu Jul 5 11:15:01 CEST 2018
+ CP2K| Program compiled on                                                  f016
+ CP2K| Program compiled for                  linux-rhel7-x86_E5v4_Mellanox-intel
+ CP2K| Data directory path            /work/lsmo/aiida-lsmo-codes/data/cp2k/data
+ CP2K| Input file name                                               UTSA_80.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                    BASIS_MOLOPT_UCL
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                UTSA_80_cleaned.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                    test-ta
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                       SL
+ GLOBAL| Run type                                                   ENERGY_FORCE
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| Total number of message passing processes                             1
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name :  Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197735712     197735712     197735712     197735712
+ MEMORY| MemFree             172233988     172233988     172233988     172233988
+ MEMORY| Buffers                  1516          1516          1516          1516
+ MEMORY| Cached                 194772        194772        194772        194772
+ MEMORY| Slab                   373764        373764        373764        373764
+ MEMORY| SReclaimable            78852         78852         78852         78852
+ MEMORY| MemLikelyFree       172509128     172509128     172509128     172509128
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2017)           **
+ **                                                                           **
+ *******************************************************************************
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              50
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                                 0.00
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                               50
+                        DIIS optimization
+                        DIIS buffer length                                     3
+                        step_size                                       5.00E-01
+
+ Number of electrons:                                                       1008
+ Number of occupied orbitals:                                                504
+ Number of molecular orbitals:                                               504
+
+ Number of orbital functions:                                               3120
+ Number of independent orbital functions:                                   3120
+
+ Extrapolation method: initial_guess
+slurmstepd: error: *** STEP 1992751.0 ON h141 CANCELLED AT 2022-03-30T11:13:38 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+cp2k.popt          0000000002F2C511  tbk_trace_stack_i     Unknown  Unknown
+cp2k.popt          0000000002F2A64B  tbk_string_stack_     Unknown  Unknown
+cp2k.popt          0000000002EDB564  Unknown               Unknown  Unknown
+cp2k.popt          0000000002EDB376  tbk_stack_trace       Unknown  Unknown
+cp2k.popt          0000000002E797D9  for__issue_diagno     Unknown  Unknown
+cp2k.popt          0000000002E8172C  for__signal_handl     Unknown  Unknown
+libpthread-2.17.s  00002B2A91D105D0  Unknown               Unknown  Unknown
+cp2k.popt          0000000001023FFC  Unknown               Unknown  Unknown
+cp2k.popt          0000000001025EE2  Unknown               Unknown  Unknown
+cp2k.popt          0000000001027662  Unknown               Unknown  Unknown
+cp2k.popt          000000000101632B  Unknown               Unknown  Unknown
+cp2k.popt          0000000001011C1B  Unknown               Unknown  Unknown
+cp2k.popt          0000000000C12709  Unknown               Unknown  Unknown
+cp2k.popt          0000000000C11023  Unknown               Unknown  Unknown
+cp2k.popt          0000000000C0B921  Unknown               Unknown  Unknown
+cp2k.popt          00000000009A3EFE  Unknown               Unknown  Unknown
+cp2k.popt          0000000001AFF102  Unknown               Unknown  Unknown
+cp2k.popt          0000000001B0C672  Unknown               Unknown  Unknown
+cp2k.popt          00000000017E4374  Unknown               Unknown  Unknown
+cp2k.popt          0000000001097C19  Unknown               Unknown  Unknown
+cp2k.popt          0000000000EA4921  Unknown               Unknown  Unknown
+cp2k.popt          0000000000EA2FD1  Unknown               Unknown  Unknown
+cp2k.popt          0000000000897326  Unknown               Unknown  Unknown
+cp2k.popt          000000000042F7D7  Unknown               Unknown  Unknown
+cp2k.popt          00000000004160C9  Unknown               Unknown  Unknown
+cp2k.popt          000000000041571E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2A92B6A495  __libc_start_main     Unknown  Unknown
+cp2k.popt          0000000000415629  Unknown               Unknown  Unknown
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
