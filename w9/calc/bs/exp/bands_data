@@ -1,0 +1,9 @@
+0,1
+direct_band_gap_energy,0.8721729699999998
+direct_band_gap,False
+band_gap_energy,0.86656054
+band_gap_transition,U-Z
+vbm,2.42444088
+cbm,3.29100142
+effective_mass_hole,17.05669816874041
+effective_mass_electron,11.003085585365449
