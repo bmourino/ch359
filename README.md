@@ -49,7 +49,7 @@ analyze their effects on models.
 
 ![](./images/mof5.png)
 
-- MOF-5: Explored extensively for its electronic properties.[3](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.1c00543)
+- MOF-5 (CSD ID: MIBQAR, QMOF ID: qmof-a2d95c3): Explored extensively for its electronic properties.[3](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.1c00543)
 - Goal: Take a deeper, critical look into DFT band gaps.
 - How:  Find  ground  state  and  perform  calculations  with  different 
 functionals. Compare with literature, and with values predicted from your 
