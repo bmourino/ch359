@@ -5,6 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 import os
+import joblib
 
 # Define evaluation function
 def get_regression_metrics(y_true, y_pred, prefix=""): 
@@ -79,6 +80,7 @@ train_loss = get_regression_metrics(#fillme, #fillme, "train")
 test_loss = get_regression_metrics(#fillme, #fillme, "test")
 
 # Save results
+joblib.dump(model, "../../results/stoich120/best_model.pkl")
 df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), columns=[
 						'DFT', 'ML'], index=refcodes_train)
 df_train.to_csv('../../results/stoich120/train_results.csv', header=True, index=True)
