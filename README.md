@@ -26,13 +26,13 @@ Setup your environment with:
 | Date  | Week  | Topic                    | Specifics     | Ideas          |
 | :---  | :---  | :---                     | :---          | :---           |   
 | 23.02  | 1     | Introduction             | Project presentation and computational carpentry         |           |     
-| 23.02  | 2     | (P1) How is my MOF doing?     | Get familiar with mofchecker, oximachine, manage_crystal, visualization, geometric features    | For cleaning, as exercise: PCN-223 - pial occupations; manually create lone molecules               |
-| 23.02  | 3     | (P2) ML1             |         |           |    
-| 23.02  | 4     | (P2) ML2             |         |           |    
-| 23.02  | 5     | (P2) ML3             |         |           |    
-| 23.02  | 6     | (P2) ML4             |         |           |    
-| 23.02  | 7     | (P2) ML5             |         |           |    
-| 23.02  | 8     | (P3) Looking for convergence  | Write inputs, perform sp with different cutoff, rel_cutoff, with and without supercell      | Use MOF-5               |
-| 23.02  | 9	 | (P3) Looking for ground state | Write inputs, perform geo_opt and cell_opt and work on what's left from 1 |	|
-| 23.02  | 10 	 | (P3) Testing different flavors| Write inputs for different functionals: PBE0, DFT+U, SCAN, xTB?	| **test before if it works! |
-| 23.02  | 11    | (P3) Analyzing results	       | Plot density of states, analyze orbitals, and start with presentation	| Talk about fundamental vs optical gap; give them data on GW, BSE, TDDFT, experimental optical gap |
+| 01.03  | 2     | (P1) How is my MOF doing?     | Get familiar with mofchecker, oximachine, manage_crystal, visualization, geometric features    | For cleaning, as exercise: PCN-223 - pial occupations; manually create lone molecules               |
+| 08.03  | 3     | (P2) ML1             |         |           |    
+| 15.03  | 4     | (P2) ML2             |         |           |    
+| 22.03  | 5     | (P2) ML3             |         |           |    
+| 29.03  | 6     | (P2) ML4             |         |           |    
+| 05.04  | 7     | (P2) ML5             |         |           |    
+| 12.04  | 8     | (P3) Looking for convergence  | Write inputs, perform sp with different cutoff, rel_cutoff, with and without supercell      | Use MOF-5               |
+| 19.04  | 9	 | (P3) Looking for ground state | Write inputs, perform geo_opt and cell_opt and work on what's left from 1 |	|
+| 26.04  | 10 	 | (P3) Testing different flavors| Write inputs for different functionals: PBE0, DFT+U, SCAN, xTB?	| **test before if it works! |
+| 03.05  | 11    | (P3) Analyzing results	       | Plot density of states, analyze orbitals, and start with presentation	| Talk about fundamental vs optical gap; give them data on GW, BSE, TDDFT, experimental optical gap |
