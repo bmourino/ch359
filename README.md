@@ -4,8 +4,6 @@ Supporting scripts, tutorials and materials for CH-359 Projects in Computational
 
 ## How to approach this repository
 
-This is the private version, with all the answers and comments. #todo: create a public version
-
 It is divided by 3 parts  and inside each folder there will be an explanation on how to install the required packages, scritps to run (tutorials and exercises) and a commented solution.
 
 You might need to install minconda before, check [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
@@ -25,8 +23,6 @@ Alternative (if taking too long):
     $ conda activate ch359
     $ pip install umap pyeqeq oximachinerunner manage_crystal rdkit
 
-
-#todo: test environment setup
 
 # Overview
 
