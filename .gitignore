@@ -1,8 +1,0 @@
-data/cifs/
-data/features/*.csv
-data/mofs.xyz
-data/refcodes.csv
-
-machine_learning/*/*_filled.py
-
-results/*/*.csv
