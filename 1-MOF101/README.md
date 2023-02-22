@@ -44,6 +44,8 @@ Removing unwanted atoms:
 2. Select this tool
 3. Pressing ctrl (or command on macos) select all atoms you wish to delete and remove it with backspace
 
+*To think over: what do we mean by a “clean structure” and why do we need to make sure the structure is properly cleaned?*
+
 ## 2. Gathering information about our MOFs
 
 Run the jupyter notebook with the following:
