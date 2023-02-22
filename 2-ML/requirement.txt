@@ -1,0 +1,6 @@
+DScribe
+matminer
+UMAP
+ase
+pymatgen
+scikit-learn
