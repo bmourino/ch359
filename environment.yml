@@ -15,4 +15,3 @@ dependencies:
   - bokeh
   - pandas
   - seaborn
-  - pyeqeq
