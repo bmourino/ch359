@@ -23,7 +23,7 @@ Alternative (if taking too long):
     $ conda install -c conda-forge mamba
     $ mamba env create --file environment.yml
     $ conda activate ch359
-    $ pip install umap pyeqeq oximachinerunner manage_crystal
+    $ pip install umap pyeqeq oximachinerunner manage_crystal rdkit
 
 
 #todo: test environment setup

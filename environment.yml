@@ -18,7 +18,6 @@ dependencies:
   - DScribe
   - matminer
   - ase
-  - rdkit
   - scikit-learn
   - moffragmentor
   - zeopp-lsmo
