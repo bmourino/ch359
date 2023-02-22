@@ -40,6 +40,8 @@ overview on basic properties.
 
 ## MOF Database & Machine Learning
 
+![](./images/qmoflogo.png)
+
 - Database on electronic properties of MOFs.[2](https://www.sciencedirect.com/science/article/pii/S2590238521000709)
 - Goal: Quantitative structure property relationship modelling of MOF band 
 gaps.
