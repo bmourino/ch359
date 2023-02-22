@@ -9,3 +9,5 @@ Additionally you should do:
     $ pip install oximachinerunner
     $ pip install manage_crystal
     $ pip install moffragmentor
+
+#todo: add here tutorial and remove doc file
