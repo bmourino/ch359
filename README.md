@@ -2,7 +2,7 @@
 
 Supporting scripts, tutorials and materials for CH-359 Projects in Computational Chemistry @ EPFL
 
-# How to approach this repository
+## How to approach this repository
 
 This is the private version, with all the answers and comments. #todo: create a public version
 
@@ -30,6 +30,36 @@ Alternative (if taking too long):
 
 # Overview
 
+## MOFs 101
+
+- Metal  Organic  Frameworks  (MOFs)  are  porous,  crystalline  materials 
+formed by metal nodes connected by organic linkers.[1](https://pubs.rsc.org/en/content/articlehtml/2020/ta/c9ta13506e#fn1)
+Explored for optoelectronic properties in, e.g., photocatalysis.[1](https://pubs.rsc.org/en/content/articlehtml/2020/ta/c9ta13506e#fn1)
+- Goal:  Computationally  handle  MOFs  -  visualize,  clean  and  get  an 
+overview on basic properties.
+
+## MOF Database & Machine Learning
+
+- Database on electronic properties of MOFs.[2](https://www.sciencedirect.com/science/article/pii/S2590238521000709)
+- Goal: Quantitative structure property relationship modelling of MOF band 
+gaps.
+- How: Build ML models step by step, i.e., data preparation, model training, 
+and  model  evaluation.  Compare  different  featurization  methods  and 
+analyze their effects on models.
+
+## MOFs & DFT: Digging deeper
+
+- MOF-5: Explored extensively for its electronic properties.[3](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.1c00543)
+- Goal: Take a deeper, critical look into DFT band gaps.
+- How:  Find  ground  state  and  perform  calculations  with  different 
+functionals. Compare with literature, and with values predicted from your 
+ML model.
+
+## Learning outcomes
+
+- Understand  advantages  and  limitations  of  ML  and  DFT  to  obtain  band 
+gaps.
+- Understand the difference between fundamental and optical gaps.
 
 # Plan 2023-1
 
