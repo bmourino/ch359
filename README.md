@@ -12,7 +12,7 @@ You might need to install minconda before, check [here](https://docs.conda.io/pr
 
 Setup your environment with:
 
-    $ git clone -b 2023-1 https://github.com/bmourino/ch359.git
+    $ git clone https://github.com/bmourino/ch359.git
     $ conda install -c conda-forge mamba
     $ mamba env create --file environment.yml
     $ conda activate ch359
