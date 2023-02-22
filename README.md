@@ -15,7 +15,7 @@ Setup your environment with:
     $ git clone https://github.com/bmourino/ch359.git
     $ conda env create --file environment.yml
     $ conda activate ch359
-    $ pip install umap pyeqeq oximachinerunner manage_crystal
+    $ pip install umap pyeqeq oximachinerunner manage_crystal rdkit
 
 Alternative (if taking too long):
 
