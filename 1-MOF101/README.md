@@ -41,7 +41,7 @@ Explorer mode: If you feel adventurous and up for a (laborious) challenge after 
 Removing unwanted atoms:
 
 1. Go to Select – Select by element to see which element it is according to color
-2. Select this tool
+2. Select this tool ![](./images/select_tool.png)
 3. Pressing ctrl (or command on macos) select all atoms you wish to delete and remove it with backspace
 
 *To think over: what do we mean by a “clean structure” and why do we need to make sure the structure is properly cleaned?*

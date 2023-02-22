@@ -49,6 +49,8 @@ analyze their effects on models.
 
 ## MOFs & DFT: Digging deeper
 
+![](./images/mof5.png)
+
 - MOF-5: Explored extensively for its electronic properties.[3](https://pubs.acs.org/doi/full/10.1021/acs.jpclett.1c00543)
 - Goal: Take a deeper, critical look into DFT band gaps.
 - How:  Find  ground  state  and  perform  calculations  with  different 
