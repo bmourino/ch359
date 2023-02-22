@@ -55,6 +55,8 @@ Run the jupyter notebook with the following:
 
 *Important: Make sure you are using the kernel ch359!*
 
+*tips: “esc+b” will create a new block of code; “esc+dd” will delete the block of code you’re at; enter will add a new line in the same block of code; shift+enter will run the block of code.*
+
 ## 3. Managing structure files
 
 You can convert between cif and xyz files (try to think: what is the difference between them?) with manage_crystal:
