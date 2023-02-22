@@ -36,6 +36,14 @@ Go to the [download](https://avogadro.cc) page on the website, and proceed with 
 
 Explorer mode: If you feel adventurous and up for a (laborious) challenge after class, you can try selecting a paper that has the crystallographic information of the structure and see if you can create a cif file yourself!
 
+### Cleaning on Avogadro
+
+Removing unwanted atoms:
+
+1. Go to Select – Select by element to see which element it is according to color
+2. Select this tool
+3. Pressing ctrl (or command on macos) select all atoms you wish to delete and remove it with backspace
+
 ## 2. Gathering information about our MOFs
 
 Run the jupyter notebook with the following:
@@ -44,3 +52,25 @@ Run the jupyter notebook with the following:
     $ run-checks.ipynb
 
 *Important: Make sure you are using the kernel ch359!*
+
+## 3. Managing structure files
+
+You can convert between cif and xyz files (try to think: what is the difference between them?) with manage_crystal:
+
+From .cif to .xyz:
+
+    $ manage_crystal file.cif -o xyz
+
+From .xyz to .cif:
+
+1. Open the .xyz file with any text editor and on the second line add:
+
+	CELL: A B C alpha beta gamma
+
+*replace A with the value of A and so on*
+
+2. Save new file (e.g.: file.xyz)
+
+3. Converting to .cif:
+
+    $ manage_crystal file.xyz -o cif
