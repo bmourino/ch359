@@ -75,6 +75,6 @@ From .xyz to .cif:
 
 2. Save new file (e.g.: file.xyz)
 
-3. Converting to .cif:
+Converting to .cif:
 
     $ manage_crystal file.xyz -o cif
