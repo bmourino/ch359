@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_FeH2PtC8(N3F)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.26476000
+_cell_length_b   7.28550000
+_cell_length_c   7.47227000
+_cell_angle_alpha   90.00110000
+_cell_angle_beta   90.00750000
+_cell_angle_gamma   99.13990000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   FeH2PtC8(N3F)2
+_chemical_formula_sum   'Fe1 H2 Pt1 C8 N6 F2'
+_cell_volume   390.46654624
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.00000000  0.49999000  0.49999000  1.0
+  H  H1  1  0.72775000  0.78482000  0.50000000  1.0
+  H  H2  1  0.27226000  0.21520000  0.50003000  1.0
+  Pt  Pt3  1  0.99998000  0.99999000  0.99999000  1.0
+  C  C4  1  0.01049000  0.81190000  0.18799000  1.0
+  C  C5  1  0.98947000  0.18807000  0.18799000  1.0
+  C  C6  1  0.98949000  0.18807000  0.81200000  1.0
+  C  C7  1  0.01051000  0.81191000  0.81198000  1.0
+  C  C8  1  0.62717000  0.65703000  0.50000000  1.0
+  C  C9  1  0.56368000  0.34105000  0.50001000  1.0
+  C  C10  1  0.37284000  0.34299000  0.50002000  1.0
+  C  C11  1  0.43633000  0.65897000  0.50000000  1.0
+  N  N12  1  0.01527000  0.70258000  0.30198000  1.0
+  N  N13  1  0.98469000  0.29739000  0.30200000  1.0
+  N  N14  1  0.98473000  0.29741000  0.69801000  1.0
+  N  N15  1  0.01532000  0.70260000  0.69799000  1.0
+  N  N16  1  0.69171000  0.49349000  0.50001000  1.0
+  N  N17  1  0.30830000  0.50653000  0.50000000  1.0
+  F  F18  1  0.62535000  0.17695000  0.50002000  1.0
+  F  F19  1  0.37466000  0.82307000  0.50000000  1.0

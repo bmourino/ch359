@@ -1,4 +1,3 @@
-data/cifs/
 data/features/*.csv
 data/mofs.xyz
 data/refcodes.csv

@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_FeH3C2N3Cl2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.65176000
+_cell_length_b   6.97094000
+_cell_length_c   7.27435057
+_cell_angle_alpha   113.27183206
+_cell_angle_beta   113.97590167
+_cell_angle_gamma   97.43290000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   FeH3C2N3Cl2
+_chemical_formula_sum   'Fe2 H6 C4 N6 Cl4'
+_cell_volume   265.70193706
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.50000000  1.00000000  0.00000000  1.0
+  Fe  Fe1  1  0.00000000  0.00001000  1.00000000  1.0
+  H  H2  1  0.85470000  0.55659000  0.16245000  1.0
+  H  H3  1  0.14531000  0.44340000  0.83755000  1.0
+  H  H4  1  0.29754000  0.66431000  0.44092000  1.0
+  H  H5  1  0.65848000  0.73599000  0.39341000  1.0
+  H  H6  1  0.70245000  0.33568000  0.55908000  1.0
+  H  H7  1  0.34153000  0.26401000  0.60659000  1.0
+  C  C8  1  0.17195000  0.71720000  0.48916000  1.0
+  C  C9  1  0.84162000  0.75103000  0.46536000  1.0
+  C  C10  1  0.82806000  0.28278000  0.51082000  1.0
+  C  C11  1  0.15837000  0.24896000  0.53462000  1.0
+  N  N12  1  0.21449000  0.84489000  0.70209000  1.0
+  N  N13  1  0.00442000  0.86415000  0.68707000  1.0
+  N  N14  1  0.78552000  0.15513000  0.29793000  1.0
+  N  N15  1  0.99558000  0.13586000  0.31294000  1.0
+  N  N16  1  0.94043000  0.65666000  0.33896000  1.0
+  N  N17  1  0.05957000  0.34335000  0.66106000  1.0
+  Cl  Cl18  1  0.31132000  0.83454000  0.13596000  1.0
+  Cl  Cl19  1  0.33011000  0.31651000  0.13885000  1.0
+  Cl  Cl20  1  0.68867000  0.16546000  0.86404000  1.0
+  Cl  Cl21  1  0.66989000  0.68349000  0.86115000  1.0
