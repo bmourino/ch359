@@ -8,11 +8,15 @@ This is the private version, with all the answers and comments. #todo: create a 
 
 It is divided by week, and inside each folder there will be an explanation on how to install the required packages, scritps to run (tutorials and exercises) and a commented solution.
 
+You might need to install minconda before, check [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
+
 Setup your environment with:
 
     $ git clone -b 2023-1 https://github.com/bmourino/ch359.git
-    $ conda env create -f environment.yml
-    $ conda activate test_ta
+    $ conda install -c conda-forge mamba
+    $ mamba env create --file environment.yml
+    $ conda activate ch359
+    $ pip install umap pyeqeq oximachinerunner manage_crystal
 
 
 #todo: fix python version in environment, test 
