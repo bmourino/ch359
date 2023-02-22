@@ -4,7 +4,11 @@ Supporting scripts, tutorials and materials for CH-359 Projects in Computational
 
 ## How to approach this repository
 
-It is divided by 3 parts  and inside each folder there will be an explanation on how to install the required packages, scritps to run (tutorials and exercises) and a commented solution.
+The following steps assume that you use MacOS or some Linux flavor. If you use Windows, we recommend that you first install the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+Create a new folder and clone this repository (you need `git` for this, if you get a `missing command` error for git you can install it with `sudo apt-get install git` for Linux or `brew install git` for MacOS).
+
+It is divided by 3 parts and inside each folder there will be an explanation on how to install the required packages, scritps to run (tutorials and exercises) and a commented solution.
 
 You might need to install minconda before, check [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/).
 
