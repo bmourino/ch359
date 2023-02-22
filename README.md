@@ -13,6 +13,13 @@ You might need to install minconda before, check [here](https://docs.conda.io/pr
 Setup your environment with:
 
     $ git clone https://github.com/bmourino/ch359.git
+    $ conda env create --file environment.yml
+    $ conda activate ch359
+    $ pip install umap pyeqeq oximachinerunner manage_crystal
+
+Alternative (if taking too long):
+
+    $ git clone https://github.com/bmourino/ch359.git
     $ conda install -c conda-forge mamba
     $ mamba env create --file environment.yml
     $ conda activate ch359
@@ -20,6 +27,9 @@ Setup your environment with:
 
 
 #todo: test environment setup
+
+# Overview
+
 
 # Plan 2023-1
 
