@@ -1,0 +1,18 @@
+name: test_ta
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - matplotlib
+  - mofchecker
+  - pymatgen=2022.3.7
+  - plotly
+  - scipy
+  - numpy
+  - python=3.8
+  - jupyter
+  - bokeh
+  - pandas
+  - seaborn
+  - pyeqeq

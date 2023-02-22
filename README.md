@@ -8,6 +8,15 @@ This is the private version, with all the answers and comments. #todo: create a 
 
 It is divided by week, and inside each folder there will be an explanation on how to install the required packages, scritps to run (tutorials and exercises) and a commented solution.
 
+Setup your environment with:
+
+    $ git clone -b 2023-1 https://github.com/bmourino/ch359.git
+    $ conda env create -f environment.yml
+    $ conda activate test_ta
+
+
+#todo: fix python version in environment, test 
+
 # Plan 2023-1
 
 | Week  | Topic                    | Specifics     | Ideas          |
