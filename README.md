@@ -69,16 +69,16 @@ gaps.
 
 | Date  | Week  | Topic                    | Specifics     | 
 | :---  | :---  | :---                     | :---          |   
-| 23.02  | 1     | Introduction             | Project presentation and computational carpentry         |   
+| 23.02  | 1     | Introduction             | Project presentation and scripting tutorial        |   
 | 01.03  | 2     | 1-MOF101             | Get familiar with mofchecker, oximachine, manage_crystal, visualization, geometric features    |
-| 08.03  | 3     | 2-ML Featurizer 1        |   Introduction to machine learning, featurize MOFs using statistical composition method
-| 15.03  | 4     | 2-ML Featurizer 2        |   Featurize MOFs using orbital field matrix, data preprocessing 
-| 22.03  | 5     | 2-ML Model development   |   Develop a Kernel Ridge Regression (KRR) model   
-| 29.03  | 6     | 2-ML Model fine-tuning   |   Hyperparameter searching  
-| 05.04  | 7     | 2-ML Model evaluation    |   Evaluate the model performance and stability, use the model to predict the band gap of MOF-5
-| 12.04  | 8     | 3-DFT Looking for convergence  | Write inputs, perform sp with different cutoff, rel_cutoff, with and without supercell     
-| 19.04  | 9	 | 3-DFT Looking for ground state | Write inputs, perform geo_opt and cell_opt and work on what's left from 1 |
-| 26.04  | 10 	 | 3-DFT Testing different flavors| Write inputs for different functionals: PBE0, DFT+U, SCAN, xTB?	|
+| 08.03  | 3     | 2-ML Featurizer 1        |   Introduction to machine learning, featurize MOFs using statistical composition method |
+| 15.03  | 4     | 2-ML Featurizer 2        |   Featurize MOFs using orbital field matrix, data preprocessing |
+| 22.03  | 5     | 2-ML Model development   |   Develop a Kernel Ridge Regression (KRR) model   |
+| 29.03  | 6     | 2-ML Model fine-tuning   |   Hyperparameter searching  |
+| 05.04  | 7     | 2-ML Model evaluation    |   Evaluate the model performance and stability, use the model to predict the band gap of MOF-5 |
+| 12.04  | 8     | 3-DFT Looking for convergence  | Perform single point with different cutoff, rel_cutoff, with and without supercell     
+| 19.04  | 9	 | 3-DFT Looking for ground state | Perform geometry optimization and cell optimization and work on what's left from 1 |
+| 26.04  | 10 	 | 3-DFT Testing different flavors| Perform single point calculations with different functionals: GGA, hybrids and DFT+Hubbard	|
 | 03.05  | 11    | 3-DFT Analyzing results	       | Plot density of states, analyze orbitals, and start with presentation	|
 | 11.05  | 12    | Working on report and presentation	       |  |
 | 18.05  | 13    | Public holiday	       |  |
