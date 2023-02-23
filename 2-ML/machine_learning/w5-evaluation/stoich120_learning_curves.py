@@ -81,5 +81,7 @@ for train_size in train_sizes:
 	print('Avg. testing MSE: ', np.round(np.average(mse_test_seeds), 3))
 	print('Avg. testing r2: ', np.round(np.average(r2_test_seeds), 3))
 
-np.savetxt('../../results/stoi120/learning_curve_avg.csv',np.vstack([mae,mse,r2]),delimiter=',')
-np.savetxt('../../results/stoi120/learning_curve_std.csv',np.vstack([mae_std,mse_std,r2_std]),delimiter=',')
+df_evaluation = pd.DataFrame(
+	np.array([train_sizes, mae, mse, r2, mae_std, mse_std, r2_std]).T, 
+	columns=["Training size", "MAE", "MSE", "R2", "MAE_std", "MSE_std", "R2_std"])
+df_evaluation.to_csv('../../results/stoich120/learning_curve.csv', index=False)

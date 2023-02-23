@@ -73,8 +73,8 @@ gaps.
 | 01.03  | 2     | 1-MOF101             | Get familiar with mofchecker, oximachine, manage_crystal, visualization, basic features    |
 | 08.03  | 3     | 2-ML Featurizer 1        |   Introduction to machine learning, featurize MOFs using statistical composition method |
 | 15.03  | 4     | 2-ML Featurizer 2        |   Featurize MOFs using orbital field matrix, data preprocessing |
-| 22.03  | 5     | 2-ML Model development   |   Develop a Kernel Ridge Regression (KRR) model   |
-| 29.03  | 6     | 2-ML Model fine-tuning   |   Hyperparameter searching  |
+| 22.03  | 5     | 2-ML Model development   |   Develop a regression model   |
+| 29.03  | 6     | 2-ML Model fine-tuning   |   Perform hyperparameter searching to fine tune the model developed last time  |
 | 05.04  | 7     | 2-ML Model evaluation    |   Evaluate the model performance and stability, use the model to predict the band gap of MOF-5 |
 | 12.04  | 8     | 3-DFT Looking for convergence  | Perform single point with different cutoff, rel_cutoff, with and without supercell     
 | 19.04  | 9	 | 3-DFT Looking for ground state | Perform geometry optimization and cell optimization and work on what's left from 1 |
