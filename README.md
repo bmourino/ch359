@@ -70,7 +70,7 @@ gaps.
 | Date  | Week  | Topic                    | Specifics     | 
 | :---  | :---  | :---                     | :---          |   
 | 23.02  | 1     | Introduction             | Project presentation and scripting tutorial        |   
-| 01.03  | 2     | 1-MOF101             | Get familiar with mofchecker, oximachine, manage_crystal, visualization, geometric features    |
+| 01.03  | 2     | 1-MOF101             | Get familiar with mofchecker, oximachine, manage_crystal, visualization, basic features    |
 | 08.03  | 3     | 2-ML Featurizer 1        |   Introduction to machine learning, featurize MOFs using statistical composition method |
 | 15.03  | 4     | 2-ML Featurizer 2        |   Featurize MOFs using orbital field matrix, data preprocessing |
 | 22.03  | 5     | 2-ML Model development   |   Develop a Kernel Ridge Regression (KRR) model   |
