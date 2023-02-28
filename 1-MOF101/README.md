@@ -10,7 +10,7 @@ Keep track of your answers to the questions that are marked with a *Q$*, it can 
 
 Go to the [download](https://avogadro.cc) page on the website, and proceed with installation
 
-*N.B.: Be patient, Avogadro unfortunately crashes sometimes*
+*N.B.: Be patient, Avogadro unfortunately crashes sometimes. You can also try [GDIS](http://gdis.seul.org/), but you might run into issues to install it.*
 
 ### Tutorial - choose your structure and visualize!
 
