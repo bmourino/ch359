@@ -1,6 +1,8 @@
 # How is my MOF doing?
 
-This week we will learn how to perform sanity checks on MOFs, and investigate some basic properties such as geometric features and oxidation state. #todo: can add also moffragmentor, mofid/mofkey, topology.
+This week we will learn how to perform sanity checks on MOFs, and investigate some basic properties such as geometric features and oxidation state.
+
+Keep track of your answers to the questions that are marked with a *Q$*, it can be useful for the report!
 
 ## 1. Visualizing structures on Avogadro
 
@@ -8,7 +10,7 @@ This week we will learn how to perform sanity checks on MOFs, and investigate so
 
 Go to the [download](https://avogadro.cc) page on the website, and proceed with installation
 
-*N.B.: Be patient, Avogadro unfortunately crashes sometimes*
+*N.B.: Be patient, Avogadro unfortunately crashes sometimes. You can also try [GDIS](http://gdis.seul.org/), but you might run into issues to install it.*
 
 ### Tutorial - choose your structure and visualize!
 
@@ -55,6 +57,8 @@ Run the jupyter notebook with the following:
 
 *Important: Make sure you are using the kernel ch359!*
 
+Alternatively, you can try using [VSCode](https://code.visualstudio.com/).
+
 *tips: “esc+b” will create a new block of code; “esc+dd” will delete the block of code you’re at; enter will add a new line in the same block of code; shift+enter will run the block of code.*
 
 ## 3. Managing structure files
@@ -78,3 +82,12 @@ From .xyz to .cif:
 Converting to .cif:
 
     $ manage_crystal file.xyz -o cif
+
+
+## 4. Other tools
+
+Have a look at [MOFid/MOFkey](https://snurr-group.github.io/web-mofid/sbu.html) and [topcryst](https://topcryst.com/).
+
+MOFid promotes a standardized approach to the naming of MOFs, you can read more about it [here](https://pubs.acs.org/doi/full/10.1021/acs.cgd.9b01050).
+
+topcryst is a tool that allows you to evaluate the topology of a MOF, you can read more about it [here](https://www.tandfonline.com/doi/full/10.1080/27660400.2022.2088041).
