@@ -2,9 +2,30 @@
 
 Supporting scripts, tutorials and materials for CH-359 Projects in Computational Chemistry @ EPFL
 
+## Set up your environment
+
+If you are using Windows system, please follow the steps first: 
+
+- Step 1: Enable WSL on Windows:
+    - go to “Control Panel”
+    - go to “Program and Features”
+    - go to “Turn Windows features on or off”
+    - select “Windows Subsytem for Linux”
+    - restart your computer
+(On older versions, you might need to turn “Developer Mode” on: Start menu → Settings → search for “developer settings” → Turn on “Developer Mode”)
+
+- Step 2: Install Ubuntu from the Microsoft Store
+    - go to “Microsoft Store”
+    - go to “Apps”
+    - look for “Ubuntu 20.04.5 LTS”
+    - select “Get”
+
+- Step 3: Create a Linux account
+- Step 4: Follow the descriptions in the following section
+
 ## How to approach this repository
 
-The following steps assume that you use MacOS or some Linux flavor. If you use Windows, we recommend that you first install the [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install).
+The following steps assume that you use MacOS or some Linux flavor. 
 
 Create a new folder and clone this repository (you need `git` for this, if you get a `missing command` error for git you can install it with `sudo apt-get install git` for Linux or `brew install git` for MacOS).
 
