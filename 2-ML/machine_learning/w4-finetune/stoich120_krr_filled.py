@@ -6,6 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 import os
 import joblib
+import json
 
 # Define evaluation function
 def get_regression_metrics(y_true, y_pred, prefix=""): 
@@ -25,8 +26,8 @@ def get_regression_metrics(y_true, y_pred, prefix=""):
 
 # Settings
 param_grid = {
-                'alpha': np.logspace(-2, 0, 10),
-                'gamma': np.logspace(-2, 1, 30)
+                'alpha': np.logspace(-2, 0, 2),
+                'gamma': np.logspace(-2, 1, 2)
             }
 			# Hint: You can use the np.logspace function to generate a grid for values that you want to vary on a logarithmic scale
 			# There are two hyperparameters for KRR: the regularization strength alpha and the Gaussian width gamma
@@ -68,8 +69,8 @@ y_test = test_set.loc[:, df.columns == 'outputs.pbe.bandgap'].to_numpy()
 
 # Train and evaluate KRR model
 krr = KernelRidge(kernel=kernel)
-random_krr = RandomizedSearchCV(krr, param_distributions=param_grid, n_iter=3,
-                        cv=5, verbose=2, n_jobs=-2
+random_krr = RandomizedSearchCV(krr, param_distributions=param_grid, n_iter=1,
+                        cv=3, verbose=2, n_jobs=-2
 )
 random_krr.fit(X_train, y_train)
 model = random_krr.best_estimator_
@@ -94,3 +95,13 @@ print('Test size: ', len(y_test))
 print('Best hyperparameters: ', random_krr.best_params_)
 print('Train loss: ', train_loss)
 print('Test loss: ', test_loss)
+
+# Save evaluation matrix
+loss = train_loss
+loss.update(test_loss)
+
+loss_obj = json.dumps(loss, indent=4)
+with open('../../results/stoich120/loss.json', 'w') as file:
+	file.write(loss_obj)
+
+pd.DataFrame(random_krr.cv_results_).to_csv('../../results/stoich120/cv_results.csv')

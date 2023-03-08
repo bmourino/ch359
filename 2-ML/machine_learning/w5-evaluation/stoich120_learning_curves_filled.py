@@ -13,7 +13,7 @@ kernel = 'laplacian'  # kernel function
 test_size = 0.2  # fraction held-out for testing
 seeds = [42, 125, 267,]# 541, 582]  # random seeds
 train_sizes = [2**7, 2**8, 2**9, 2**10, 2**11, 2**12, 2**13, -1]  # train sizes
-fingerprint_path = '../../data/features/stoich120_fingerprints_processed.csv' # fingerprints (length N)
+fingerprint_path = '../../data/features/stoich120_fingerprints.csv' # fingerprints (length N)
 y_path = os.path.join('../../data','qmof.csv') # band gaps (length N)
 
 #---------------------------------------
@@ -82,7 +82,8 @@ for train_size in train_sizes:
 	print('Avg. testing MSE: ', np.round(np.average(mse_test_seeds), 3))
 	print('Avg. testing r2: ', np.round(np.average(r2_test_seeds), 3))
 
+train_sizes[-1] = train_set.shape[0]
 df_evaluation = pd.DataFrame(
 	np.array([train_sizes, mae, mse, r2, mae_std, mse_std, r2_std]).T, 
 	columns=["Training size", "MAE", "MSE", "R2", "MAE_std", "MSE_std", "R2_std"])
-df_evaluation.to_csv('../../results/stoich120/learning_curve_processed.csv', index=False)
+df_evaluation.to_csv('../../results/stoich120/learning_curve.csv', index=False)

@@ -25,7 +25,7 @@ df = df.dropna()
 refcodes = df.index
 
 # Stratification
-THRESHOLD = 2.887478
+THRESHOLD = df_BG["outputs.pbe.bandgap"].quantile(0.75)
 stratification = [1 if value > THRESHOLD else 0 for value in df["outputs.pbe.bandgap"]]
 
 # Make a training and testing set

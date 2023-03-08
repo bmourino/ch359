@@ -52,12 +52,12 @@ y_train_pred = #fillme (used the trained model to predict band gaps)
 y_test_pred = #fillme (used the trained model to predict band gaps)
 
 # Save results
-df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), columns=[
-						'DFT', 'ML'], index=refcodes_train)
+df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), 
+                        columns=['DFT', 'ML'], index=refcodes_train)
 df_train.to_csv('../../results/stoich120/train_results.csv', header=True, index=True)
 
-df_test = pd.DataFrame(np.concatenate((y_test, y_test_pred), axis=1), columns=[
-					   'DFT', 'ML'], index=refcodes_test)
+df_test = pd.DataFrame(np.concatenate((y_test, y_test_pred), axis=1), 
+                       columns=['DFT', 'ML'], index=refcodes_test)
 df_test.to_csv('../../results/stoich120/test_results.csv', header=True, index=True)
 
 print('Train size: ', len(y_train))

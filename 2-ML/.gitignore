@@ -1,8 +1,11 @@
-data/features/*.csv
+data/features/
 data/mofs.xyz
 data/refcodes.csv
+#data/mof5/mof5_meta
 
 #machine_learning/*/*_filled.py
 #utils/*_filled.ipynb
 
 results/*/*.csv
+results/*/*.json
+results/*/*.pkl
