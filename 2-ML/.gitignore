@@ -3,5 +3,6 @@ data/mofs.xyz
 data/refcodes.csv
 
 machine_learning/*/*_filled.py
+utils/*_filled.ipynb
 
 results/*/*.csv
