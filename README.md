@@ -21,6 +21,9 @@ If you are using Windows system, please follow the steps first:
     - select “Get”
 
 - Step 3: Create a Linux account
+
+- Step 4: Install compiler using `sudo apt-get install build-essential` (if there is an error, try run `sudo spt-get update` before)
+
 - Step 4: Follow the descriptions in the following section
 
 ## How to approach this repository
@@ -36,6 +39,7 @@ You might need to install minconda before, check [here](https://docs.conda.io/pr
 Setup your environment with:
 
     $ git clone https://github.com/bmourino/ch359.git
+    $ cd ch359
     $ conda env create --file environment.yml
     $ conda activate ch359
     $ pip install umap pyeqeq oximachinerunner manage_crystal rdkit
@@ -43,6 +47,7 @@ Setup your environment with:
 Alternative (if taking too long):
 
     $ git clone https://github.com/bmourino/ch359.git
+    $ cd ch359
     $ conda install -c conda-forge mamba
     $ mamba env create --file environment.yml
     $ conda activate ch359
