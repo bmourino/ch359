@@ -6,6 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 import os
 import joblib
+import json
 
 # Define evaluation function
 def get_regression_metrics(y_true, y_pred, prefix=""): 
@@ -46,8 +47,8 @@ df = df.dropna()
 refcodes = df.index
 
 # Stratification
-THRESHOLD = 2.887478
-stratification = [1 if value > THRESHOLD else 0 for value in df["outputs.pbe.bandgap"]]
+THRESHOLD = #fillme (get the 0.75 quantile of band gap value)
+stratification =  #fillme (Hint: [1 if value > THRESHOLD else 0 for value in df[label]])
 
 # Make a training and testing set
 train_set, test_set = train_test_split(
@@ -68,8 +69,9 @@ y_test = test_set.loc[:, df.columns == 'outputs.pbe.bandgap'].to_numpy()
 
 # Train and evaluate KRR model
 krr = KernelRidge(kernel=kernel)
-random_krr = RandomizedSearchCV(#your estimator, param_distributions=param_grid, n_iter=#number of evaluations,
-#                        cv=#number of folds, verbose=2, n_jobs=2
+random_krr = RandomizedSearchCV(
+	#your estimator, param_distributions=param_grid, n_iter=#number of evaluations,
+	#cv=#number of folds, verbose=2, n_jobs=2
 )
 random_krr.fit(#fillme)
 model = random_krr.best_estimator_
@@ -81,12 +83,12 @@ test_loss = get_regression_metrics(#fillme, #fillme, "test")
 
 # Save results
 joblib.dump(model, "../../results/ofm/best_model.pkl")
-df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), columns=[
-						'DFT', 'ML'], index=refcodes_train)
+df_train = pd.DataFrame(np.concatenate((y_train, y_train_pred), axis=1), 
+			columns=['DFT', 'ML'], index=refcodes_train)
 df_train.to_csv('../../results/ofm/train_results.csv', header=True, index=True)
 
-df_test = pd.DataFrame(np.concatenate((y_test, y_test_pred), axis=1), columns=[
-					   'DFT', 'ML'], index=refcodes_test)
+df_test = pd.DataFrame(np.concatenate((y_test, y_test_pred), axis=1), 
+		       columns=['DFT', 'ML'], index=refcodes_test)
 df_test.to_csv('../../results/ofm/test_results.csv', header=True, index=True)
 
 print('Train size: ', len(y_train))
@@ -94,3 +96,13 @@ print('Test size: ', len(y_test))
 print('Best hyperparameters: ', random_krr.best_params_)
 print('Train loss: ', train_loss)
 print('Test loss: ', test_loss)
+
+# Save evaluation matrix
+loss = train_loss
+loss.update(test_loss)
+
+loss_obj = json.dumps(loss, indent=4)
+with open('../../results/ofm/loss.json', 'w') as file:
+	file.write(loss_obj)
+
+pd.DataFrame(random_krr.cv_results_).to_csv('../../results/ofm/cv_results.csv')

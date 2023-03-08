@@ -81,6 +81,7 @@ for train_size in train_sizes:
 	print('Avg. testing MSE: ', np.round(np.average(mse_test_seeds), 3))
 	print('Avg. testing r2: ', np.round(np.average(r2_test_seeds), 3))
 
+train_sizes[-1] = train_set.shape[0]
 df_evaluation = pd.DataFrame(
 	np.array([train_sizes, mae, mse, r2, mae_std, mse_std, r2_std]).T, 
 	columns=["Training size", "MAE", "MSE", "R2", "MAE_std", "MSE_std", "R2_std"])
