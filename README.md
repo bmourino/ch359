@@ -53,6 +53,8 @@ Alternative (if taking too long):
     $ conda activate ch359
     $ pip install umap pyeqeq oximachinerunner manage_crystal rdkit
 
+Keep the cloned folder clean, make a copy and edit everything there.
+Before each block we will ask you to update your cloned folder with `git pull`.
 
 # Overview
 
