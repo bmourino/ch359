@@ -1,4 +1,4 @@
-data/features/
+data/features/*.csv
 data/mofs.xyz
 data/refcodes.csv
 data/mof5/mof5_meta
