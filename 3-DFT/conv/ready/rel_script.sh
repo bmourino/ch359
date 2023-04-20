@@ -18,6 +18,6 @@ for ii in $rel_cutoffs ; do
     fi
     sed -e "s/LT_cutoff/${cutoff}/g" \
         -e "s/LT_rel_cutoff/${ii}/g" \
-        # write input file from template, adding the current cutoff in the loop
+        # complete to write input file from template, adding the current cutoff in the loop
     cp $coords_file $work_dir/
 done
