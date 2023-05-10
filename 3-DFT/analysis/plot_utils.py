@@ -4,31 +4,17 @@ from __future__ import print_function
 import os
 import re
 import sys
-import glob
 import contextlib
 
 import numpy as np
 import pandas as pd # type: ignore
 import seaborn as sns # type: ignore
 
-from matplotlib import rcParams # type: ignore
 import matplotlib.pyplot as plt # type: ignore
 import matplotlib.style as style # type: ignore
 from matplotlib.lines import Line2D # type: ignore
-from matplotlib.patches import Patch # type: ignore
-from matplotlib.colors import hex2color # type: ignore
 import matplotlib.transforms as mtransforms # type: ignore
 
-import sumo  # type: ignore
-from sumo.plotting.bs_plotter import SBSPlotter  # type: ignore
-from sumo.plotting.dos_plotter import SDOSPlotter  # type: ignore
-from sumo.electronic_structure.effective_mass import get_fitting_data, fit_effective_mass # type: ignore
-
-from pymatgen.electronic_structure.dos import Dos # type: ignore
-from pymatgen.electronic_structure.core import Spin, Orbital # type: ignore
-from pymatgen.electronic_structure.bandstructure import BandStructureSymmLine # type: ignore
-
-from aiida.orm import load_node, CalcFunctionNode, CifData, Group, StructureData # type: ignore
 
 # settings
 style.use('seaborn-paper')
@@ -223,7 +209,7 @@ def plot_pdos(pdosfiles,label,outputpath):
     if 'pbe0' in pdosfiles.keys():
         r, axs = plt.subplot_mosaic([['a'],['b']],figsize=fig_sizes,sharey=True,sharex=True)
     else:
-        r, axs = plt.subplot_mosaic([['a']],figsize=fig_sizes,sharey=True,sharex=True)
+        r, axs = plt.subplot_mosaic([['a']],figsize=fig_sizes)
 
     for l, ax in axs.items():
         # label physical distance to the left and up:
@@ -277,10 +263,3 @@ def plot_pdos(pdosfiles,label,outputpath):
     output = os.path.abspath(os.path.join(outputpath, label_fig))
     r.tight_layout()
     r.savefig(output, bbox_inches='tight')
-
-def plot_bandstructure(bs_pmg, name, outdir='../output_data'):
-
-    bsplotter = SBSPlotter(bs_pmg)
-    plt = bsplotter.get_plot()
-    plt.savefig(os.path.join(outdir, '{}_bands.pdf'.format(name)), bbox_inches='tight')
-    plt.close('all')
